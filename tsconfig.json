@@ -1,28 +1,27 @@
 {
-    "compilerOptions": {
-      "target": "ES6",                          // 指定 ECMAScript 目标版本
-      "module": "CommonJS",                     // 指定模块代码生成方式
-      "strict": true,                           // 启用所有严格类型检查选项
-      "esModuleInterop": true,                  // 允许与 CommonJS 模块的互操作性
-      "forceConsistentCasingInFileNames": true, // 文件名一致性检查
-      "skipLibCheck": true,                     // 跳过库文件的类型检查
-      "outDir": "./dist",                       // 输出目录
-      "rootDir": "./src",                       // 源文件的根目录
-      "moduleResolution": "node",               // 模块解析策略
-      "resolveJsonModule": true,                // 支持导入 JSON 模块
-      "sourceMap": true,                        // 生成 .map 文件
-      "declaration": true,                      // 生成 .d.ts 声明文件
-      "noImplicitAny": true,                    // 禁止隐式 `any` 类型
-      "strictNullChecks": true,                 // 严格的 null 检查
-      "noUnusedLocals": true,                   // 检查未使用的局部变量
-      "noUnusedParameters": true                // 检查未使用的参数
-    },
-    "include": [
-      "src/**/*"                                // 包含所有 src 目录下的 TypeScript 文件
-    ],
-    "exclude": [
-      "node_modules",                           // 排除 node_modules
-      "dist"                                    // 排除 dist 输出目录
-    ]
-  }
-  
+  "compilerOptions": {
+    "target": "ES2022", // 指定 ECMAScript 目标版本
+    "module": "esnext", // 指定模块代码生成方式
+    "strict": true, // 启用所有严格类型检查选项
+    "esModuleInterop": true, // 允许与 CommonJS 模块的互操作性
+    "forceConsistentCasingInFileNames": true, // 文件名一致性检查
+    "skipLibCheck": true, // 跳过库文件的类型检查
+    "outDir": "./dist", // 输出目录
+    "rootDir": "", // 源文件的根目录
+    "moduleResolution": "node", // 模块解析策略
+    "resolveJsonModule": true, // 支持导入 JSON 模块
+    "sourceMap": true, // 生成 .map 文件
+    "declaration": true, // 生成 .d.ts 声明文件
+    "noImplicitAny": true, // 禁止隐式 `any` 类型
+    "strictNullChecks": true, // 严格的 null 检查
+    "noUnusedLocals": true, // 检查未使用的局部变量
+    "noUnusedParameters": true // 检查未使用的参数
+  },
+  "include": [
+    "**/*" // 包含所有 src 目录下的 TypeScript 文件
+  ],
+  "exclude": [
+    "node_modules", // 排除 node_modules
+    "dist" // 排除 dist 输出目录
+  ]
+}
