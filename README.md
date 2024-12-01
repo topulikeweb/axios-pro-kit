@@ -25,3 +25,7 @@ if (error) {
 } else {
   console.log("请求成功:", response);
 }
+```
+
+## 脑图
+![架构脑图](./images/axios.jpg)
